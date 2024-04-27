@@ -1,0 +1,125 @@
+@import '../../../shard-style.scss';
+
+.custom-table {
+    width: var(--content-sections-width);
+    background-color: var(--color-white);
+    height: 209px;
+    border-radius: var(--content-sections-border-radius);
+    padding: var(--content-sections-padding);
+    margin: var(--sections-margin);
+
+    .table-header {
+        @include font(500, 14px, var(--main-font));
+        color: var(--main-text-color);
+        margin-bottom: var(--sections-margin-bottom);
+    }
+
+    .product-name-row {
+        @include flex(flex-start, center);
+        @extend .gap-8;
+
+        img {
+            width: 20.12px;
+            height: 20.12px;
+        }
+
+        .product-info {
+            h6 {
+                @include font(500, 8px, var(--main-font));
+                color: var(--main-text-color);
+            }
+
+            .product-details {
+                @include flex(flex-start, start);
+                @extend .gap-5;
+
+                &>span {
+                    color: var(--table-text-color);
+                    @include font(400, 9px, var(--third-font));
+                }
+
+                .tax {
+                    color: var(--main-text-color);
+                    @include font(400, 8px, var(--main-font));
+
+                    @include flex(space-between, center);
+                    gap: 2px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+
+        margin: {
+            left: 0;
+            right: 0;
+        }
+
+        .product-name-row {
+            padding: 6px 0;
+            align-items: start;
+            flex-direction: column;
+
+            .product-info {
+                .product-details {
+                    flex-direction: column;
+                    gap: 0;
+                }
+            }
+        }
+    }
+}
+
+:host ::ng-deep {
+    .p-datatable-wrapper {
+        border-radius: 5.25px 5.25px 0 0;
+        width: var(--table-width);
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    .p-datatable {
+        .p-datatable-thead {
+            tr {
+                background-color: #F8F8F9;
+                height: 32px;
+
+                th {
+                    @include font(400, 10.5px, var(--main-font));
+                    color: var(--table-text-color);
+                    padding: 10px;
+                    background: transparent;
+                    text-align: center;
+
+                    &:first-of-type {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        .p-datatable-tbody {
+            tr {
+                background: var(--color-white);
+                height: 42px;
+
+                td {
+                    @include font(500, 12px, var(--second-font));
+                    color: var(--main-text-color);
+                    padding: 0;
+                    border-bottom: 0.5px solid #e7e9ee;
+                    text-align: center;
+
+                    &:first-of-type {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+}

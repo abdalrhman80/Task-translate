@@ -1,0 +1,36 @@
+{
+  "ModelHeaderTitle": "Purchase Invoice No.",
+  "showBtnDialog": "Show Reseat",
+  "userDetailsHeader": "Client Details",
+  "userName": "Haitham Mohammad",
+  "companyName": "Sortech A Technology",
+  "userFooterOneTitle": "Deal",
+  "userFooterOneBtnTitle": "Deal No.",
+  "userFooterTwoTitle": "Phone",
+  "ticketHeaderTitle": "Ticket No.",
+  "ticketMiddleTitle": "By",
+  "ticketMiddleMonth": "Month",
+  "ticketFooterTitle": "Ticket Type",
+  "ticketFooterTitle2": "Split Ticket",
+  "tableHeader": "Products details",
+  "tableCols": {
+    "productName": "Product Name",
+    "productPrice": "Product Price",
+    "productCount": "Quantity",
+    "productDiscount": "Discount",
+    "productTotal": "Total Price"
+  },
+  "tableProductName": "Dell laptop 128GB SSD",
+  "tax": "Tax",
+  "ticketSummaryHeader": "Ticket Summary",
+  "ticketSummaryDetails": {
+    "totalPrice": "Total Price",
+    "discount": "Discount",
+    "addedValue": "Added Value",
+    "tax": "Tax"
+  },
+  "ticketSummaryFinalPrice": "Final Price",
+  "footerBtnOneTitle": "Return Invoice",
+  "footerBtnTwoTitle": "Share",
+  "footerBtnThreeTitle": "Print Invoice"
+}

@@ -1,0 +1,33 @@
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin font($weight, $size, $family) {
+    font: {
+        weight: $weight;
+        size: $size;
+        family: $family;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.transition-bg {
+    transition: background-color .3s;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.gap-5 {
+    gap: 5px;
+}

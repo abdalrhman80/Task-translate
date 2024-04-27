@@ -1,0 +1,45 @@
+@import '../../../shard-style.scss';
+
+.modal-header-custom {
+    @include flex(space-between, center);
+    @extend .w-100;
+
+    span {
+        color: var(--main-text-color);
+        @include font(500, 14px, var(--main-font));
+    }
+
+    .header-right {
+        @include flex(center, center);
+        @extend .gap-8;
+
+        .custom-btn-right {
+            background-color: var(--main-bg-color);
+            width: 26px;
+            height: 26px;
+            border-radius: 4.5px;
+
+            &:hover {
+                background-color: var(--main-bg-color-hover);
+            }
+        }
+    }
+
+    .custom-btn-right,
+    .custom-btn-closable {
+        border: none;
+        @include flex(center, center);
+        @extend .transition-bg;
+    }
+
+    .custom-btn-closable {
+        background-color: var(--closable-btn-bg);
+        width: 22.49px;
+        height: 22.49px;
+        border-radius: 3.75px;
+
+        &:hover {
+            background-color: var(--closable-btn-bg-hover);
+        }
+    }
+}

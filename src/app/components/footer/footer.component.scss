@@ -1,0 +1,75 @@
+@import '../../../shard-style.scss';
+
+.modal-footer-custom {
+    @extend .w-100;
+    @include flex(space-between, center);
+    @extend .gap-8;
+
+    .btn-footer-one {
+        width: 106px;
+        background-color: #FAFAFA;
+        border: 1px solid #EEF2EF;
+        border-radius: 8px 10px 8px 10px;
+
+        &:hover {
+            background-color: var(--closable-btn-bg-hover);
+        }
+
+        span {
+            color: #898995;
+            @include font(400, 11px, var(--main-font));
+        }
+    }
+
+    .btn-footer-one,
+    .btn-footer-two {
+        height: 34px;
+        @extend .transition-bg;
+        @include flex(center, center);
+        @extend .gap-5;
+    }
+
+    .footer-left {
+        @include flex(space-between, center);
+        @extend .gap-8;
+
+        .btn-footer-one {
+            width: 101px;
+            border-radius: 6px;
+        }
+
+        .btn-footer-two {
+            width: 80px;
+            background-color: #0771DE;
+            border: none;
+            border-radius: 6px;
+
+            &:hover {
+                background-color: var(--main-bg-color-hover);
+            }
+
+            span {
+                color: #FCFCFC;
+                @include font(400, 11px, var(--main-font));
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+
+        .footer-right,
+        .footer-left,
+        .btn-footer-one {
+            width: 100%;
+        }
+
+        .footer-left {
+
+            .btn-footer-one,
+            .btn-footer-two {
+                width: 50%;
+            }
+        }
+    }
+}

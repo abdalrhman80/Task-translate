@@ -1,0 +1,20 @@
+<div class="ticket-summary">
+    <div class="ticket-summary-section p-2">
+        <h5>{{"ticketSummaryHeader" | translate}}</h5>
+
+        <div class="summary d-flex justify-content-between mb-1" *ngFor="let item of ticketSummary">
+            <span class="summary-title">{{item.title}} </span>
+            <span class="summary-value">{{item.value}}</span>
+        </div>
+
+        <div class="total d-flex justify-content-between ">
+            <span class="total-title">{{"ticketSummaryFinalPrice" | translate}} ( US ) :</span>
+            <span class="total-value">465 $</span>
+        </div>
+    </div>
+
+    <div class="ticket-img">
+        <img src="https://s3-alpha-sig.figma.com/img/69ab/29b6/bfae43b698bf6db4c51d9278e73e74d5?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kBe6FThPq77gR1y0i0WBN7O~wtS3hJ9CAS3Jk8DLLv0v9nDI6gNzfU4TOJXxPW5ZqWIuz1MLbh8KNzFE7-zko37PMIRqluw95wuVPNMkxvmXyY5mk4r931A6gScUc68zJBHBjHAYT9r~zJ4otA0dUAyo6kiytCmGYPs2i~t4TzJIT2Y4QvoAff3LGKxVq-8yfjQxUk09Yxn9LxuNKUHtjEMkQs6XpgFmLdU~XWpzU3lnK0Wydz4BhK82myqm0B0Mlg5oHaZyWfF4Bc8norXCtzrO-RMBjPgk1WwgACzrG~mh4gWB2ummb4NqDeE9MYwVCBth0pPE9eJfFi99J3pXQQ__"
+            alt="img">
+    </div>
+</div>

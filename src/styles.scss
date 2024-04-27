@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/neo-sans-arabic');
+
+:root {
+    --main-font: 'Neo Sans Arabic', sans-serif;
+    --second-font: 'Inter', sans-serif;
+    --third-font: 'Poppins', sans-serif;
+    --color-white: #fff;
+    --color-white-60: #FFFFFF99;
+    --body-bg: #c8cace;
+    --main-bg-color: #0771DE;
+    --main-bg-color-hover: #1766b5;
+    --main-color: #FCFCFC;
+    --closable-btn-bg: #F4F4F4;
+    --closable-btn-bg-hover: #eaeaea;
+    --modal-content-bg: #f3f5f7;
+    --header-text-color: red;
+    --content-sections-width: 619px;
+    --content-sections-padding: 9px 14px;
+    --content-sections-border-radius: 6px;
+    --sections-margin-bottom: 10px;
+    --sections-margin: 0 20px 10px;
+    --dialog-width: 663px;
+    --main-text-color: #1C1C28;
+    --second-text-color: #898995;
+    --qrcode-bg: #44A6E9;
+    --table-text-color: #83899F;
+    --table-width: 589px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--body-bg);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-bg-color);
+    border-radius: 5px;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--body-bg);
+}
+
+button {
+    outline: none;
+}

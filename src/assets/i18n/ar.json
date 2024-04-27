@@ -1,0 +1,36 @@
+{
+  "ModelHeaderTitle": "فاتورة شراء رقم ",
+  "showBtnDialog": "اعرض الفتورة",
+  "userDetailsHeader": "تفاصيل العميل",
+  "userName": "هيثم محمد",
+  "companyName": "سورتيك أي تكنولوجي",
+  "userFooterOneTitle": "الصفقة",
+  "userFooterOneBtnTitle": "صفقة رقم",
+  "userFooterTwoTitle": "الهاتف",
+  "ticketHeaderTitle": "رقم الفاتورة",
+  "ticketMiddleTitle": "المنشئ",
+  "ticketMiddleMonth": "مارس",
+  "ticketFooterTitle": "نوع الفاتورة",
+  "ticketFooterTitle2": "فاتورة تقسيط",
+  "tableHeader": "تفاصيل المنتجات",
+  "tableCols": {
+    "productName": "اسم المنتج",
+    "productPrice": "سعر المنتج",
+    "productCount": "الكمية",
+    "productDiscount": "الخصم",
+    "productTotal": "السعر الكلي"
+  },
+  "tableProductName": "لابتوب ديل 128 جيجا SSD",
+  "tax": "ضريبة",
+  "ticketSummaryHeader": "ملخص الفاتورة",
+  "ticketSummaryDetails": {
+    "totalPrice": "إجمالي السعر",
+    "discount": "الخصم",
+    "addedValue": "القيمة المضافة",
+    "tax": "الضريبة"
+  },
+  "ticketSummaryFinalPrice": "السعر النهائي",
+  "footerBtnOneTitle": "إرجاع الفاتورة",
+  "footerBtnTwoTitle": "مشاركة",
+  "footerBtnThreeTitle": "طباعة الفاتورة"
+}

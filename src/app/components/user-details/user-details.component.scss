@@ -1,0 +1,203 @@
+@import '../../../shard-style.scss';
+
+.user-details-section {
+    height: 139px;
+    width: var(--content-sections-width);
+    background-color: var(--color-white);
+    padding: var(--content-sections-padding);
+    border-radius: var(--content-sections-border-radius);
+    margin: var(--sections-margin);
+
+    .section-header {
+        color: var(--main-text-color);
+        @include font(500, 14px, var(--main-font));
+        margin-bottom: var(--sections-margin-bottom);
+    }
+
+    .user-details {
+        @include flex(space-between, flex-end);
+        @extend .gap-8;
+
+        .user-info {
+            .user {
+                @include flex(flex-start, center);
+                @extend .gap-8;
+
+                img {
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                }
+
+                .user-name-and-company {
+                    .user-name {
+                        color: var(--main-text-color);
+                        @include font(500, 12px, var(--main-font));
+                    }
+
+                    .user-company {
+                        color: var(--second-text-color);
+                        @include font(400, 10.5px, var(--main-font));
+                    }
+                }
+            }
+
+            .user-footer {
+                @include flex(flex-start, center);
+                @extend .gap-8;
+                flex-wrap: wrap;
+                margin-top: 12px;
+
+                .user-footer-one,
+                .user-footer-two {
+                    @include flex(center, center);
+                    @extend .gap-5;
+
+                    .title {
+                        @include font(400, 10.5px, var(--main-font));
+                        color: var(--main-text-color);
+                    }
+                }
+
+                .custom-btn {
+                    @include flex(center, center);
+                    @extend .gap-5;
+                    background: #FBFBFB;
+                    border: 0.5px solid #99A1B766;
+                    border-radius: 6px;
+                    width: 90px;
+                    padding: 4px;
+                    height: 25px;
+                    @extend .transition-bg;
+
+                    &:hover {
+                        background-color: var(--closable-btn-bg-hover);
+                    }
+
+                    span {
+                        @include font(400, 8px, var(--main-font));
+                    }
+                }
+            }
+        }
+
+        .ticket {
+            @include flex(space-between, center);
+            width: 311px;
+            height: 101px;
+            border-radius: 10px;
+            background-color: var(--qrcode-bg);
+            gap: 10px;
+            padding: 10px;
+
+            .ticket-info {
+                .ticket-info-header {
+                    @include flex(flex-start, center);
+                    @extend .gap-8;
+                    margin-bottom: 12px;
+
+                    &>div:first-child {
+                        @include flex(flex-start, center);
+                        @extend .gap-5;
+
+                        h5 {
+                            color: var(--color-white);
+                            @include font(500, 14px, var(--main-font));
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                    &>div:last-child {
+                        @include flex(space-between, center);
+                        @extend .gap-5;
+
+                        span {
+                            color: var(--color-white);
+                            @include font(400, 11.52px, var(--main-font));
+                        }
+                    }
+                }
+
+                .ticket-info-middle {
+                    @include font(400, 10px, var(--main-font));
+                    @include flex(flex-start, center);
+                    gap: 2px;
+                    margin-bottom: 6px;
+                    color: var(--color-white);
+
+                    &>span:first-child {
+                        color: var(--color-white-60);
+                    }
+
+                    .ticketMiddleMonth {
+                        font-family: var(--second-font);
+                    }
+                }
+
+                .ticket-info-footer {
+                    @include flex(flex-start, baseline);
+                    gap: 2px;
+                    height: 20px;
+
+                    span {
+                        @include font(400, 10px, var(--main-font));
+                        color: var(--color-white);
+                    }
+
+                    &>span:first-of-type {
+                        color: var(--color-white-60);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+
+        margin: {
+            left: 0;
+            right: 0;
+        }
+
+        .user-details {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .user-footer-one,
+            .user-footer-two {
+                width: 100%;
+                justify-content: space-between !important;
+            }
+
+            .user-info,
+            .ticket {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .user-details {
+            .ticket {
+                flex-direction: column;
+                height: auto;
+
+                .ticket-info {
+                    width: 95%;
+
+                    .ticket-info-header,
+                    .ticket-info-middle,
+                    .ticket-info-footer {
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

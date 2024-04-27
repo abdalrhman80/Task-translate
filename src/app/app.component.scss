@@ -1,0 +1,10 @@
+.showModalBtn {
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    border: none;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: var(--main-bg-color-hover);
+    }
+}

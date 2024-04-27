@@ -1,0 +1,19 @@
+<div class="min-vh-100 d-flex justify-content-center align-items-center align-content-center gap-3 flex-wrap">
+  <div class="w-100">
+    <button class="d-block mx-auto showModalBtn rounded-3 px-3 py-2 fs-5" (click)="visible=true"
+      (keyup.escape)="visible=false">
+      <span>{{'showBtnDialog' | translate}}</span>
+    </button>
+  </div>
+
+  <div class="language d-flex justify-content-center align-items-center gap-4">
+    <button class="EN btn btn-success d-block rounded-3 px-3 py-2 fs-5" (click)="changeLang('en')">
+      <span>EN</span>
+    </button>
+    <button class="AR btn btn-danger d-block rounded-3 px-3 py-2 fs-5" (click)="changeLang('ar')">
+      <span>AR</span>
+    </button>
+  </div>
+</div>
+
+<app-invoice [visible]="visible" [modalDirection]="modalDirection" (visibleChange)="visibleDialogChange($event)"></app-invoice>

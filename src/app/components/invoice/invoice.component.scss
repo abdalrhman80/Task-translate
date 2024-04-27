@@ -1,0 +1,50 @@
+:host ::ng-deep {
+    .p-dialog {
+        width: var(--dialog-width);
+        height: 671px;
+
+        .p-dialog-header,
+        .p-dialog-content,
+        .p-dialog-footer {
+            width: var(--dialog-width);
+        }
+
+        .p-dialog-header {
+            padding: var(--content-sections-padding);
+            height: 50px;
+        }
+
+        .p-dialog-content {
+            padding: 9px 0;
+            height: 543px;
+        }
+
+        .p-dialog-footer {
+            padding: var(--content-sections-padding);
+            height: 54px;
+        }
+
+        .p-dialog-content {
+            background-color: var(--modal-content-bg);
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 85%;
+            height: auto;
+
+            .p-dialog-content {
+                padding: {
+                    right: 20px;
+                    left: 20px;
+                }
+            }
+
+            .p-dialog-header,
+            .p-dialog-content,
+            .p-dialog-footer {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

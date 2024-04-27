@@ -1,0 +1,16 @@
+<p-dialog [dir]="modalDirection" header="Task" [(visible)]="visible" [modal]="true" [draggable]="false"
+    [closable]="false">
+    <ng-template pTemplate="header">
+        <app-header style="width: 100%;" (visibleChange)="hideDialog($event)"></app-header>
+    </ng-template>
+
+    <ng-template pTemplate="content">
+        <app-user-details></app-user-details>
+        <app-table></app-table>
+        <app-ticket-summary></app-ticket-summary>
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <app-footer></app-footer>
+    </ng-template>
+</p-dialog>
